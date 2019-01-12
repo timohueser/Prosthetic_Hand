@@ -1,6 +1,6 @@
 # Prosthetic_Hand_V1
 ## Overview
-The aim of this project is to design a 3D printable hand prosthesis. The hand uses 6 cheap geared DC motors that are readily available from Ebay and other places for it's 6 degrees of freedom. Motor control is achieved through a custom made Motor driver PCB that also handles force measurements for each finger. All the 3D models in STEP and STL format are available in this repository, as well as the KiCad design files and schematic of the PCB. The Hand is fully self contained and only requires an external Power supply and a SPI control signal to be operated.
+The aim of this project is to design a 3D printable hand prosthesis. The hand uses 6 cheap geared DC motors that are readily available from Ebay and other places for it's 6 degrees of freedom. Motor control is achieved through a custom made Motor driver PCB that also handles force measurements for each finger. All the 3D models in STEP and STL format are available in this repository, as well as the KiCad design files and schematic of the PCB. The hand is fully self contained and only requires an external power supply and a SPI control signal to be operated. A new version of the prosthetic hand based on this design can be found here: https://github.com/timohueser/Prosthetic_Hand_V2.
 <p align="center">
 <img src="https://github.com/timohueser/Prosthetic_Hand_V1/blob/master/Picture_Gallery/Hand_V1_3.jpeg" width="40%" height="40%">
 </p>
