@@ -1,10 +1,9 @@
 # Prosthetic_Hand_V1
 ## Overview
+The aim of this project is to design a 3D printable hand prosthesis. The hand uses 6 cheap geared DC motors that are readily available from Ebay and other places for it's 6 degrees of freedom. Motor control is achieved through a custom made Motor driver PCB that also handles force measurements for each finger. All the 3D models in STEP and STL format are available in this repository, as well as the KiCad design files and schematic of the PCB. The Hand is fully self contained and only requires an external Power supply and a SPI control signal to be operated.
 <p align="center">
 <img src="https://github.com/timohueser/Prosthetic_Hand_V1/blob/master/Picture_Gallery/Hand_V1_3.jpeg" width="40%" height="40%">
 </p>
-
-The aim of this project is to design a 3D printable hand prosthesis. The hand uses 6 cheap geared DC motors that are readily available from Ebay and other places for it's 6 degrees of freedom. Motor control is achieved through a custom made Motor driver PCB that also handles force measurements for each finger. All the 3D models in STEP and STL format are available in this repository, as well as the KiCad design files and schematic of the PCB. The Hand is fully self contained and only requires an external Power supply and a SPI control signal to be operated.
 
 ## Technical Details
 ### Fingers
@@ -16,7 +15,7 @@ Furthermore the exact geometry, like for example the axis of rotation for abduct
 
 ### Motor Driver PCB
 <p align="center">
-<img src="https://github.com/timohueser/Prosthetic_Hand_V1/blob/master/Picture_Gallery/Hand_V1_Inside_1.jpeg" width="40%" height="40%">
+<img src="https://github.com/timohueser/Prosthetic_Hand_V1/blob/master/Picture_Gallery/Hand_V1_Inside_1.jpeg" width="35%" height="35%">
 </p>
 
 The motor driver PCB is based on the L293D Quad Half-H Driver to power the 6 DC motors. It needs to be supplied by a 9-12V motor power supply and a 3-5V supply for the logic and current sense circuitry. The motor supply should be able to handle at least 2 Amps of peak current draw. The motor driver ICs are controlled by a simple 74HC595 shift register, this enables very simple control over the hand over a standard SPI protocoll. Unfortunately there is no encoder readout for the motors for reasons of space constraint. This limits the precision the fingers can be positioned at significantly. 
